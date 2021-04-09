@@ -15,7 +15,7 @@ export const Card = ({ size = "medium", image, name, subtitle, price }) => {
   return (
     <StyledCard size={size}>
       {size === "big" && (
-        <StyledButton isOutline>
+        <StyledButton isOutline isActive>
           <Icon name="heart" />
         </StyledButton>
       )}
