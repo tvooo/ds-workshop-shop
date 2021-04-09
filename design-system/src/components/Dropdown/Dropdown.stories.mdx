@@ -1,0 +1,32 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+import { config } from "storybook-addon-designs";
+
+import Dropdown from ".";
+
+<Meta title="Components/Dropdown" parameters={{
+    viewport: {
+      defaultViewport: 'mobile1'
+    },
+    design: config({
+        type: "figma",
+        url:
+          "https://www.figma.com/file/AWWkZAdBsBvZJHu6PnjbtP/Workshop-design-file-(1)?node-id=264%3A430",
+      }),
+  }}/>
+
+## Dropdown
+
+Allows the user to select from a list of options.
+
+<Canvas>
+  <Story name="Default">
+    <Dropdown>DHL Express</Dropdown>
+  </Story>
+  <Story name="Disabled">
+    <Dropdown disabled>DHL Express</Dropdown>
+  </Story>
+</Canvas>
+
+## Props
+
+<ArgsTable of={Dropdown} />
