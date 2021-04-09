@@ -4,22 +4,16 @@
  */
 import React from "react";
 import styled from "styled-components";
-import { Button, Icon, Avatar, Title } from "design-system";
+import { Button, Icon, Avatar, Title, Card, Navigation } from "design-system";
 
-import avatarImg from "../assets/avatar.png";
 import item1Img from "../assets/item1.png";
 import item2Img from "../assets/item2.png";
 import item3Img from "../assets/item3.png";
 import item4Img from "../assets/item4.png";
+import avatarImage from "../assets/avatar.png";
 
 const StyledDiv1 = styled.div`
   padding: 64px 40px;
-`;
-
-const StyledDiv2 = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 40px;
 `;
 
 const StyledDiv3 = styled.div`
@@ -38,21 +32,11 @@ const StyledDiv5 = styled.div`
   gap: 32px 24px;
 `;
 
-const StyledDiv6 = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
 const StyledBorder = styled.div`
   width: 1px;
   height: 16px;
   background-color: rgba(0, 0, 0, 0.1);
   margin: 0 8px;
-`;
-
-const StyledImg = styled.img`
-  max-width: 100%;
-  margin-bottom: 16px;
 `;
 
 const StyledButton = styled(Button)`
@@ -64,27 +48,48 @@ const StyledButton = styled(Button)`
   }
 `;
 
-const StyledP = styled.p`
-  color: #f15223;
-  font-weight: 700;
-  margin-top: 8px;
-`;
+const products = [
+  {
+    name: "Nike Air Force 1 '07",
+    image: item1Img,
+    price: "95.00",
+    subtitle: "Men's Shoe",
+  },
+  {
+    name: "Nike Air Shadow Force",
+    image: item2Img,
+    price: "95.00",
+    subtitle: "Men's Shoe",
+  },
+  {
+    name: "Nike Air Force 2 '07",
+    image: item3Img,
+    price: "95.00",
+    subtitle: "Men's Shoe",
+  },
+  {
+    name: "Nike Air Force 3 '07",
+    image: item4Img,
+    price: "95.00",
+    subtitle: "Men's Shoe",
+  },
+];
 
 const Home = () => {
   return (
     <div>
       <StyledDiv1>
-        <StyledDiv2>
-          <Avatar src={avatarImg} alt="" />
-          <Button isOutline>
-            <Icon name="menu" />
-          </Button>
-        </StyledDiv2>
+        <Navigation
+          firstAction={<Avatar src={avatarImage} />}
+          lastAction={
+            <Button isOutline>
+              <Icon name="menu" />
+            </Button>
+          }
+        />
         <Title>Store</Title>
-
         <StyledDiv3>
           <h4>All Product</h4>
-
           <StyledDiv4>
             <StyledButton color="transparent">
               <Icon name="viewItem" width={24} height={16} />
@@ -99,26 +104,9 @@ const Home = () => {
           </StyledDiv4>
         </StyledDiv3>
         <StyledDiv5>
-          <StyledDiv6>
-            <StyledImg src={item1Img} alt="" />
-            <h4>Nike Air Force 1 '07</h4>
-            <StyledP>€95.00</StyledP>
-          </StyledDiv6>
-          <StyledDiv6>
-            <StyledImg src={item2Img} alt="" />
-            <h4>Nike Air Shadow Force</h4>
-            <StyledP>€105.00</StyledP>
-          </StyledDiv6>
-          <StyledDiv6>
-            <StyledImg src={item3Img} alt="" />
-            <h4>Nike Air Force 1 '07</h4>
-            <StyledP>€95.00</StyledP>
-          </StyledDiv6>
-          <StyledDiv6>
-            <StyledImg src={item4Img} alt="" />
-            <h4>Nike Air Force 1 '07</h4>
-            <StyledP>€95.00</StyledP>
-          </StyledDiv6>
+          {products.map((item) => {
+            return <Card size="medium" key={item.name} {...item} />;
+          })}
         </StyledDiv5>
       </StyledDiv1>
     </div>
