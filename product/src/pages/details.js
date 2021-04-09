@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Button, Icon, Card, Navigation } from "design-system";
-import itemImg from "../assets/item1.png";
+import itemImg from "../assets/item1large.png";
 
 const StyledDiv1 = styled.div`
   padding: 64px 40px;
