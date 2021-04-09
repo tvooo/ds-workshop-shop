@@ -1,0 +1,29 @@
+import { ArgsTable, Meta, Canvas, Story } from "@storybook/addon-docs/blocks";
+import { config } from "storybook-addon-designs";
+
+import Avatar from ".";
+import avatarImage from "../../../assets/avatar.png";
+
+<Meta title="Components/Avatar" parameters={{
+    viewport: {
+      defaultViewport: "mobile1",
+    },
+    design: config({
+      type: "figma",
+      url: "https://www.figma.com/file/AWWkZAdBsBvZJHu6PnjbtP/Workshop-design-file-1?node-id=270%3A201",
+    }),
+  }}/>
+
+## Avatar
+
+Use the Avatar component to show a user's profile image.
+
+<Canvas>
+  <Story name="Default">
+    <Avatar src={avatarImage} />
+  </Story>
+</Canvas>
+
+## Props
+
+<ArgsTable of={Avatar} />
