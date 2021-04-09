@@ -5,7 +5,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Button, Icon } from "design-system";
-
+import { colors } from "tokens";
 import cardImg from "../assets/Card.svg";
 
 const StyledDiv1 = styled.div`
@@ -60,7 +60,7 @@ const StyledDiv5 = styled.div`
 `;
 
 const StyledLink = styled.a`
-  color: #f15223;
+  color: ${colors.blueBlue100};
   font-size: 18px;
 `;
 
