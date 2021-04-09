@@ -6,8 +6,8 @@
 
 export { default as GlobalStyle } from "./global.js";
 
-
 export { default as Avatar } from "./components/Avatar";
 export { default as Button } from "./components/Button";
 export { default as Card } from "./components/Card";
+export { default as DataTable } from "./components/DataTable";
 export { default as Icon } from "./components/Icon";
