@@ -8,4 +8,5 @@ export { default as GlobalStyle } from "./global.js";
 
 
 export { default as Button } from "./components/Button";
+export { default as Card } from "./components/Card";
 export { default as Icon } from "./components/Icon";
