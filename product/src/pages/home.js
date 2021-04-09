@@ -5,6 +5,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Button, Icon, Avatar, Title, Card, Navigation } from "design-system";
+import { Link } from "react-router-dom";
 
 import item1Img from "../assets/item1.png";
 import item2Img from "../assets/item2.png";
@@ -46,6 +47,11 @@ const StyledButton = styled(Button)`
   &:last-child {
     margin-right: 0;
   }
+`;
+
+const StyledLink = styled(Link)`
+  color: currentColor;
+  text-decoration: none;
 `;
 
 const products = [
@@ -105,7 +111,11 @@ const Home = () => {
         </StyledDiv3>
         <StyledDiv5>
           {products.map((item) => {
-            return <Card size="medium" key={item.name} {...item} />;
+            return (
+              <StyledLink to="/details">
+                <Card size="medium" key={item.name} {...item} />
+              </StyledLink>
+            );
           })}
         </StyledDiv5>
       </StyledDiv1>

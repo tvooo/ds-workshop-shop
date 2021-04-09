@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 09 Apr 2021 10:31:30 GMT
+ * Generated on Fri, 09 Apr 2021 12:08:06 GMT
  */
 
 export const headline1FontSize = "36px";
@@ -17,11 +17,11 @@ export const headline1ParagraphSpacing = "0px";
 export const headline1TextCase = "none";
 export const headline2FontSize = "24px";
 export const headline2TextDecoration = "none";
-export const headline2FontFamily = "Sitara";
-export const headline2FontWeight = 700;
+export const headline2FontFamily = "Poppins";
+export const headline2FontWeight = 600;
 export const headline2FontStyle = "normal";
 export const headline2FontStretch = "normal";
-export const headline2FontStyleOld = "Bold";
+export const headline2FontStyleOld = "SemiBold";
 export const headline2LetterSpacing = "-0.8px";
 export const headline2LineHeight = "34px";
 export const headline2ParagraphIndent = "0px";
@@ -75,15 +75,15 @@ export const headline6LineHeight = "24px";
 export const headline6ParagraphIndent = "0px";
 export const headline6ParagraphSpacing = "0px";
 export const headline6TextCase = "none";
-export const paragraph1FontSize = "14px";
+export const paragraph1FontSize = "18px";
 export const paragraph1TextDecoration = "none";
-export const paragraph1FontFamily = "SuperFrench";
+export const paragraph1FontFamily = "Poppins";
 export const paragraph1FontWeight = 400;
 export const paragraph1FontStyle = "normal";
 export const paragraph1FontStretch = "normal";
 export const paragraph1FontStyleOld = "Regular";
-export const paragraph1LetterSpacing = "-0.3px";
-export const paragraph1LineHeight = "24px";
+export const paragraph1LetterSpacing = "-0.4px";
+export const paragraph1LineHeight = "28px";
 export const paragraph1ParagraphIndent = "0px";
 export const paragraph1ParagraphSpacing = "0px";
 export const paragraph1TextCase = "none";
@@ -111,15 +111,3 @@ export const paragraph3LineHeight = "24px";
 export const paragraph3ParagraphIndent = "0px";
 export const paragraph3ParagraphSpacing = "0px";
 export const paragraph3TextCase = "none";
-export const headline1CupcakesFontSize = "36px";
-export const headline1CupcakesTextDecoration = "none";
-export const headline1CupcakesFontFamily = "Sitara";
-export const headline1CupcakesFontWeight = 700;
-export const headline1CupcakesFontStyle = "normal";
-export const headline1CupcakesFontStretch = "normal";
-export const headline1CupcakesFontStyleOld = "Bold";
-export const headline1CupcakesLetterSpacing = "-1.6px";
-export const headline1CupcakesLineHeight = "46px";
-export const headline1CupcakesParagraphIndent = "0px";
-export const headline1CupcakesParagraphSpacing = "0px";
-export const headline1CupcakesTextCase = "none";

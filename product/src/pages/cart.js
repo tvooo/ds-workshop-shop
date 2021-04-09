@@ -12,6 +12,7 @@ import {
   DataTable,
   Navigation,
 } from "design-system";
+import { Link } from 'react-router-dom';
 
 import avatarImage from "../assets/avatar.png";
 import item1Img from "../assets/item1.png";
@@ -41,6 +42,11 @@ const orderDetails = {
   total: "€95.00",
 };
 
+const StyledLink = styled(Link)`
+  color: currentColor;
+  text-decoration: none;
+`;
+
 const Cart = () => {
   return (
     <div>
@@ -64,7 +70,7 @@ const Cart = () => {
         <StyledDiv5>
           <StyledTableHeader>Summary</StyledTableHeader>
           <DataTable {...orderDetails} />
-          <Button isStretched>Checkout</Button>
+          <StyledLink to="/checkout"><Button isStretched>Checkout</Button></StyledLink>
         </StyledDiv5>
       </StyledDiv1>
     </div>
