@@ -4,7 +4,6 @@ import Button from "../Button";
 import Icon from "../Icon";
 import { bool, string, oneOf } from "prop-types";
 import { colors, typography as t } from "tokens";
-import { primaryOrange100 } from "../../../../tokens/dist/colors";
 
 /* Card
  *
@@ -132,7 +131,7 @@ const StyledCardName = styled.h2`
 `;
 
 const StyledCardPrice = styled.p`
-  color: ${colors.primaryOrange100};
+  color: ${colors.blueBlue100};
   margin-top: 8px;
   font-weight: 500;
   ${({ size }) => {
@@ -141,10 +140,10 @@ const StyledCardPrice = styled.p`
         font-family: ${t.headline2FontFamily};
         font-size: ${t.headline2FontSize};
         line-height: ${t.headline2LineHeight};
-        font-weight: ${t.headline2FontWeight};
+        font-weight: 600;
         font-style: ${t.headline2FontStyle};
         letter-spacing: ${t.headline1LetterSpacing};
-        color: ${colors.primaryOrange100};
+        color: ${colors.blueBlue100};
         margin-top: 16px;`;
     } else if (size === "small") {
       return `
